@@ -17,9 +17,15 @@ public class CS106A_DigitSum extends ConsoleProgram
 	}
 	
 	
+	private void introduceApp()
+	{
+		println("This program sums the digits in an integer.");
+	}
+	
+	
 	private void getIntegerFromUser()
 	{
-		int userInt = readInt("enter a number you'd like to sum: ");
+		int userInt = readInt("enter a positive integer you'd like to sum: ");
 		sumDigits(userInt);
 	}
 	
@@ -28,6 +34,7 @@ public class CS106A_DigitSum extends ConsoleProgram
 	{
 		int dSum = 0;
 		while (userInput > 0){
+			//book does this in 2 lines, I did it in 3 (womp womp)
 			int tmpLastDigit = userInput % 10;
 			userInput /= 10;
 			dSum += tmpLastDigit;
