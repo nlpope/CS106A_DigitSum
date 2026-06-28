@@ -13,6 +13,7 @@ public class CS106A_DigitSum extends ConsoleProgram
 {	
 	public void run()
 	{ 
+		introduceApp();
 		getIntegerFromUser();
 	}
 	
